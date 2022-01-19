@@ -15,14 +15,20 @@
      transform: scale(1.05); transition: 1s;
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
     }
-    .col-4:hover{
+    .col-lg-4:hover{
      transform: scale(1.05); transition: 1s;
     }
-    .nav-item:hover{
-     transform: scale(1.2);
+    .fa-shopping-cart:hover{
+     transform: scale(1.5);
     }
     .logo:hover{
      transform: scale(1.4); transition: 1s;
+    }
+    body{
+      background-color: #F6F6FC;
+    }
+    .shadow{
+      background-color: white;
     }
     </style>
 
@@ -30,31 +36,38 @@
 <body>
     <!-- header start -->
     <header style="margin: 4% 8%; padding-bottom: 2%;">
-      <nav class="navbar navbar-light bg-light shadow p-3 mb-5 bg-body rounded-3">
-      <a class="navbar-brand ms-5 fw-bold" href="#">
-        Photography Products
-      </a>
-      <ul class="nav justify-content-end me-5 fw-bolder">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sign up</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Log in</a>
-          </li>
-      </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow rounded-3">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Photography Products</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-curren="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="#">Sign up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="#">Log in</a>
+              </li>
+              <i class="fas fa-search d-flex align-items-center ms-3"></i>
+    <i class="fas fa-shopping-cart d-flex align-items-center ms-4 fs-4"></i>
+            </ul>
+          </div>
+        </div>
       </nav>
       </header>
     <!-- body start -->
     <main style="margin: 4% 8%;">
       <!-- head view -->
       <section style="padding-bottom: 10%;" class="d-flex">
-        <div class="w-100">
+        <div class="w-100 d-block">
           <h1 style="font-size: 4rem;"> Start your journey as Photographer</h1>
           <p style="text-align: justify;">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos culpa, hic dolorem ad dolorum ipsam consequuntur labore ut? Maxime architecto dicta praesentium quis nisi optio asperiores tenetur repudiandae rem! Corporis maxime incidunt, debitis excepturi, neque quis qui deleniti fugiat dolores at dicta iusto quod possimus! Illo cumque nobis soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error deleniti maiores dolorem illum commodi aliquam sit laudantium deserunt id ad expedita, placeat consectetur animi ut laboriosam facilis fugiat tempora corrupti rerum non dolorum optio dolores! Cumque, praesentium? Quaerat a atque iure similique veniam. Iusto nihil ab perspiciatis at laborum similique.
@@ -73,13 +86,13 @@
         background: #333;
         background-image: linear-gradient(to right, #ccc, #333, #ccc);">
           <div class="d-flex justify-content-evenly">
-          <img class="logo" src="logos/Alibaba.svg" alt="">
-          <img class="logo" src="logos/Amazon.svg" alt="">
-          <img class="logo" src="logos/Daraz.pk Logo.svg" alt="">
-          <img class="logo" src="logos/Ebay.svg" alt="">
-          <img class="logo" src="logos/Rakuten.svg" alt="">
-          <img class="logo" src="logos/Target.svg" alt="">
-          <img class="logo" src="logos/Walmart.svg" alt="">
+          <img class="logo d-block" src="logos/Alibaba.svg" alt="">
+          <img class="logo d-block" src="logos/Amazon.svg" alt="">
+          <img class="logo d-block" src="logos/Daraz.pk Logo.svg" alt="">
+          <img class="logo d-block" src="logos/Ebay.svg" alt="">
+          <img class="logo d-block" src="logos/Rakuten.svg" alt="">
+          <img class="logo d-block" src="logos/Target.svg" alt="">
+          <img class="logo d-block" src="logos/Walmart.svg" alt="">
         </div>
         <hr style="border: 0;
         height: 1px;
@@ -92,7 +105,7 @@
         <h1 class="text-center mb-4">Collections</h1>
         
         <div class="row ms-5">
-          <div class="col-4 pb-5">
+          <div class="col-lg-4 col-md-6 col-12 pb-5">
             <div class="rounded-3 shadow" style="width: 20rem;">
               <img style="width: 18rem;" src="images/action.png" class="card-img-top ms-3 mt-3" alt="...">
               <div class="card-body">
@@ -110,7 +123,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4 pb-5">
+          <div class="col-lg-4 col-md-6 col-12 pb-5">
             <div class="rounded-3 shadow col-lg-4 " style="width: 20rem;">
               <img style="width: 18rem;" src="images/airpod.png" class="card-img-top ms-3 mt-3" alt="...">
               <div class="card-body">
@@ -128,7 +141,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4 pb-5">
+          <div class="col-lg-4 col-md-6 col-12 pb-5">
             <div class="rounded-3 shadow col-lg-4 " style="width: 20rem;">
               <img style="width: 18rem;" src="images/camera.png" class="card-img-top ms-3 mt-3" alt="...">
               <div class="card-body">
@@ -146,7 +159,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4 pb-5">
+          <div class="col-lg-4 col-md-6 col-12 pb-5">
             <div class="rounded-3 shadow col-lg-4 " style="width: 20rem;">
               <img style="width: 18rem;" src="images/drone.png" class="card-img-top ms-3 mt-3" alt="...">
               <div class="card-body">
@@ -164,7 +177,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4 pb-5">
+          <div class="col-lg-4 col-md-6 col-12 pb-5">
             <div class="rounded-3 shadow col-lg-4 " style="width: 20rem;">
               <img style="width: 18rem;" src="images/lights.png" class="card-img-top ms-3 mt-3" alt="...">
               <div class="card-body">
@@ -182,7 +195,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4 pb-5">
+          <div class="col-lg-4 col-md-6 col-12 pb-5">
             <div class="rounded-3 shadow col-lg-4 " style="width: 20rem;">
               <img style="width: 18rem;" src="images/mic.png" class="card-img-top ms-3 mt-3" alt="...">
               <div class="card-body">
@@ -200,7 +213,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4 pb-5">
+          <div class="col-lg-4 col-md-6 col-12 pb-5">
             <div class="rounded-3 shadow col-lg-4 " style="width: 20rem;">
               <img style="width: 18rem;" src="images/setup.png" class="card-img-top ms-3 mt-3" alt="...">
               <div class="card-body">
@@ -218,7 +231,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4 pb-5">
+          <div class="col-lg-4 col-md-6 col-12 pb-5">
             <div class="rounded-3 shadow col-lg-4 " style="width: 20rem;">
               <img style="width: 18rem;" src="images/tripod.png" class="card-img-top ms-3 mt-3" alt="...">
               <div class="card-body">
@@ -236,7 +249,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4 pb-5">
+          <div class="col-lg-4 col-md-6 col-12 pb-5">
             <div class="rounded-3 shadow col-lg-4 " style="width: 20rem;">
               <img style="width: 18rem;" src="images/single-light.png" class="card-img-top ms-3 mt-3" alt="...">
               <div class="card-body">
